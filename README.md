@@ -23,4 +23,6 @@ datasample(a, 5, 'Weights', [1 1 1 2 2 3]) % with weights
 %>  4     6     5     6     5
 datasample(a, 5, 'Replace', false) % without replacement
 %>  5     6     4     2     3
+a(randperm(length(a))) % shuffle array
+%>  2     1     4     6     5     3  
 ``` 
