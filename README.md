@@ -6,9 +6,18 @@ Matlab code snippets
 ```Matlab
 %% Random numbers
 
-rand % random number in [0..1]
+% Seeding the RNG
+rng(0, 'twister');
+
+ % random number in [0..1]
+rand
 %> 0.1711
-(b-a)*rand + a % random number in [a..b]
+
+% random number in [a..b]
+(b-a) * rand + a
+%> a = -5
+%> b = 5
+%> -4.6740
 
 
 %% Sampling integers from [1..10]
