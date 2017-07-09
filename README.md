@@ -4,6 +4,13 @@ Matlab code snippets
 # General
 
 ```Matlab
+%% Random numbers
+
+rand % random number in [0..1]
+%> 0.1711
+(b-a)*rand + a % random number in [a..b]
+
+
 %% Sampling integers from [1..10]
 randi([1 10])
 %> 4
