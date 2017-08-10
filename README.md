@@ -1,5 +1,21 @@
 
 Matlab code snippets
+```Matlab
+% Hello World
+fprintf("Hello World!\n");
+
+% Hello World to File
+fid = fopen('hello.txt', 'w');
+fprintf(fid,'Hello World!\n');
+fclose(fid);
+
+% Check if a file exists
+if ~exist('hello.txt', 'file')
+    % nope, does not exist
+else
+    % yep, exists
+end
+```
 
 # General
 
