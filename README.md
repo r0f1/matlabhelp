@@ -2,7 +2,7 @@
 Matlab code snippets
 ```Matlab
 % Hello World
-fprintf("Hello World!\n");
+fprintf('Hello World!\n');
 
 % Hello World to File
 fid = fopen('hello.txt', 'w');
