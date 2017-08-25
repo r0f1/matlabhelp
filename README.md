@@ -60,3 +60,9 @@ datasample(a, 5, 'Replace', false) % without replacement
 a(randperm(length(a))) % shuffle array
 %>  2     1     4     6     5     3  
 ``` 
+
+# Graphs
+```Matlab
+    % Graph with 50% random edges
+    G = graph(randi([0 1], 10), 'upper', 'OmitSelfLoops');
+``` 
