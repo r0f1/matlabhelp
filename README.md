@@ -63,6 +63,8 @@ a(randperm(length(a))) % shuffle array
 
 # Graphs
 ```Matlab
-    % Graph with 50% random edges
-    G = graph(randi([0 1], 10), 'upper', 'OmitSelfLoops');
+% Generate graph from matrix
+m = randi([0 1], 10) % example: with 50% edges
+G = graph(m, 'upper', 'OmitSelfLoops'); % upper = only upper triangle will be used
+                                        % OmitSelfLoops = diagonal will be treated as zeros
 ``` 
